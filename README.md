@@ -15,17 +15,21 @@
   I turn real problems in AI agents, security research, and developer tooling into verifiable, maintainable software.
 </p>
 
+<p align="center">📊 <strong>At a Glance</strong></p>
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
   <img src="https://img.shields.io/badge/Open%20Source-46%2B%20PRs-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="Open source pull requests" />
 </p>
 
+<p align="center">📬 <strong>Connect</strong></p>
+
 <p align="center">
-  <a href="https://x.com/Qiyuanqiii"><img width="200" height="28" src="./assets/social-x.svg" alt="X @Qiyuanqiii" /></a>
-  <a href="https://b23.tv/3WFYwBV"><img width="200" height="28" src="./assets/social-bilibili.svg" alt="Bilibili Qiyuanqiii" /></a>
-  <a href="https://leetcode.com/u/qiyuanqiii/"><img width="200" height="28" src="./assets/social-leetcode.svg" alt="LeetCode qiyuanqiii" /></a>
-  <a href="mailto:2297740147@qq.com"><img width="200" height="28" src="./assets/social-email.svg" alt="Email 2297740147@qq.com" /></a>
+  <a href="https://x.com/Qiyuanqiii"><img width="140" height="28" src="./assets/social-x.svg" alt="X @Qiyuanqiii" /></a>
+  <a href="https://b23.tv/3WFYwBV"><img width="172" height="28" src="./assets/social-bilibili.svg" alt="Bilibili Qiyuanqiii" /></a>
+  <a href="https://leetcode.com/u/qiyuanqiii/"><img width="180" height="28" src="./assets/social-leetcode.svg" alt="LeetCode qiyuanqiii" /></a>
+  <a href="mailto:2297740147@qq.com"><img width="220" height="28" src="./assets/social-email.svg" alt="Email 2297740147@qq.com" /></a>
 </p>
 
 <p align="center">🤖 <strong>LLM Toolchain</strong></p>
