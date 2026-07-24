@@ -22,20 +22,16 @@
 </p>
 
 <p align="center">
-  <a href="https://x.com/Qiyuanqiii"><img src="https://img.shields.io/badge/X-@Qiyuanqiii-000000?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://b23.tv/3WFYwBV"><img src="https://img.shields.io/badge/Bilibili-祈愿Qiii-FB7299?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
-  <a href="https://leetcode.com/u/qiyuanqiii/"><img src="https://img.shields.io/badge/LeetCode-qiyuanqiii-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
-  <a href="mailto:2297740147@qq.com"><img src="https://img.shields.io/badge/Email-2297740147%40qq.com-12B7F5?style=flat-square&logo=tencentqq&logoColor=white" alt="Email" /></a>
+  <a href="https://x.com/Qiyuanqiii"><img width="200" height="28" src="./assets/social-x.svg" alt="X @Qiyuanqiii" /></a>
+  <a href="https://b23.tv/3WFYwBV"><img width="200" height="28" src="./assets/social-bilibili.svg" alt="Bilibili Qiyuanqiii" /></a>
+  <a href="https://leetcode.com/u/qiyuanqiii/"><img width="200" height="28" src="./assets/social-leetcode.svg" alt="LeetCode qiyuanqiii" /></a>
+  <a href="mailto:2297740147@qq.com"><img width="200" height="28" src="./assets/social-email.svg" alt="Email 2297740147@qq.com" /></a>
 </p>
 
 <p align="center">🤖 <strong>LLM Toolchain</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/KIMI-K3-0D1117?style=for-the-badge" alt="Kimi K3" />
-  <img src="https://img.shields.io/badge/OPENAI-GPT--5.6%20SOL-10A37F?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-5.6 Sol" />
-  <img src="https://img.shields.io/badge/GEMINI-3.6%20FLASH-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini 3.6 Flash" />
-  <img src="https://img.shields.io/badge/DEEPSEEK-V4--PRO-4D6BFF?style=for-the-badge&logo=deepseek&logoColor=white" alt="DeepSeek-V4-Pro" />
-  <img src="https://img.shields.io/badge/XIAOMI%20MIMO-V2.5--PRO-FF6900?style=for-the-badge&logo=xiaomi&logoColor=white" alt="MiMo-V2.5-Pro" />
+  <img width="818" height="28" src="./assets/llm-toolchain.svg" alt="GPT-5.6 Sol · Gemini 3.6 Flash · DeepSeek-V4-Pro · MiMo-V2.5-Pro" />
 </p>
 
 ---

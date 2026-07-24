@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="818" height="28" role="img" aria-label="LLM Toolchain">
+  <title>GPT-5.6 Sol · Gemini 3.6 Flash · DeepSeek-V4-Pro · MiMo-V2.5-Pro</title>
+  <defs>
+    <clipPath id="a"><rect x="0" width="200" height="28" rx="3"/></clipPath>
+    <clipPath id="b"><rect x="206" width="200" height="28" rx="3"/></clipPath>
+    <clipPath id="c"><rect x="412" width="200" height="28" rx="3"/></clipPath>
+    <clipPath id="d"><rect x="618" width="200" height="28" rx="3"/></clipPath>
+  </defs>
+  <g clip-path="url(#a)">
+    <rect width="90" height="28" fill="#555"/>
+    <rect x="90" width="110" height="28" fill="#10A37F"/>
+  </g>
+  <g clip-path="url(#b)">
+    <rect x="206" width="90" height="28" fill="#555"/>
+    <rect x="296" width="110" height="28" fill="#4285F4"/>
+  </g>
+  <g clip-path="url(#c)">
+    <rect x="412" width="90" height="28" fill="#555"/>
+    <rect x="502" width="110" height="28" fill="#4D6BFF"/>
+  </g>
+  <g clip-path="url(#d)">
+    <rect x="618" width="90" height="28" fill="#555"/>
+    <rect x="708" width="110" height="28" fill="#FF6900"/>
+  </g>
+  <g fill="#fff" font-family="Consolas, Liberation Mono, monospace" font-size="10" font-weight="700" text-anchor="middle" letter-spacing=".45">
+    <text x="45" y="18">OPENAI</text>
+    <text x="145" y="18">GPT-5.6 SOL</text>
+    <text x="251" y="18">GEMINI</text>
+    <text x="351" y="18">3.6 FLASH</text>
+    <text x="457" y="18">DEEPSEEK</text>
+    <text x="557" y="18">V4-PRO</text>
+    <text x="663" y="18">XIAOMI MIMO</text>
+    <text x="763" y="18">V2.5-PRO</text>
+  </g>
+</svg>
