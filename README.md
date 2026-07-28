@@ -116,11 +116,12 @@
   <summary><strong>Selected pull requests</strong></summary>
   <br />
 
-- [`TencentDB-Agent-Memory#438`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/438) — Dify workflow memory adapter
-- [`TencentDB-Agent-Memory#501`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/501) — carry provenance fields through recall
-- [`VulnGym#49`](https://github.com/Tencent/VulnGym/pull/49) — auditable human-review loop for code localization
-- [`VulnGym#44`](https://github.com/Tencent/VulnGym/pull/44) — support range-based line matching in the evaluator
-- [`Search-Translate-Guard#13`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub/pull/13) — fix compatibility-search character input
+- [`TencentDB-Agent-Memory#469`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/469) — stabilize recall prompt prefixes with deterministic scene ordering
+- [`TencentDB-Agent-Memory#473`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/473) — isolate keyword-query semantics across SQLite and TCVDB
+- [`TencentDB-Agent-Memory#474`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/474) — preserve concurrent updates during Persona generation
+- [`TencentDB-Agent-Memory#476`](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/476) — add idempotent retries for gateway capture requests
+- [`VulnGym#11`](https://github.com/Tencent/VulnGym/pull/11) — deliver conservative, auditable code-location repair with reproducible artifacts
+- [`open-code-review#512`](https://github.com/alibaba/open-code-review/pull/512) — reorganize coding-agent integrations across five localized READMEs
 
 </details>
 
