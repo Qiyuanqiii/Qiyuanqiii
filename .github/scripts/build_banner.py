@@ -1,59 +1,100 @@
-"""Build the self-contained animated profile banner from its JPEG artwork."""
+"""Build the animated GIF profile banner from its JPEG artwork."""
 
 from __future__ import annotations
 
-import base64
+import math
 from pathlib import Path
+
+from PIL import Image, ImageDraw, ImageEnhance, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "assets" / "banner-background.jpg"
-OUTPUT = ROOT / "assets" / "banner.svg"
+OUTPUT = ROOT / "assets" / "banner.gif"
+WIDTH = 1280
+HEIGHT = 320
+FRAMES = 32
+
+
+def font(bold: bool, size: int) -> ImageFont.FreeTypeFont:
+    candidates = [
+        Path("C:/Windows/Fonts/segoeuib.ttf" if bold else "C:/Windows/Fonts/segoeui.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return ImageFont.truetype(str(candidate), size=size)
+    return ImageFont.load_default(size=size)
+
+
+def cover_crop(image: Image.Image) -> Image.Image:
+    scale = max(WIDTH / image.width, HEIGHT / image.height)
+    resized = image.resize(
+        (round(image.width * scale), round(image.height * scale)),
+        Image.Resampling.LANCZOS,
+    )
+    left = (resized.width - WIDTH) // 2
+    top = (resized.height - HEIGHT) // 2
+    return resized.crop((left, top, left + WIDTH, top + HEIGHT))
+
+
+def add_left_shade(image: Image.Image) -> None:
+    shade = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    pixels = shade.load()
+    for x in range(WIDTH):
+        ratio = x / (WIDTH - 1)
+        alpha = round(150 * max(0.0, 1.0 - ratio / 0.62) + 24)
+        for y in range(HEIGHT):
+            pixels[x, y] = (7, 21, 33, alpha)
+    image.alpha_composite(shade)
+
+
+def wave_polygon(base_y: float, amplitude: float, period: float, phase: float) -> list[tuple[int, int]]:
+    points = []
+    for x in range(-8, WIDTH + 9, 8):
+        y = base_y + amplitude * math.sin(2 * math.pi * (x / period + phase))
+        points.append((x, round(y)))
+    return points + [(WIDTH + 8, HEIGHT), (-8, HEIGHT)]
 
 
 def main() -> None:
-    encoded = base64.b64encode(SOURCE.read_bytes()).decode("ascii")
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
-  <title id="title">Qiyuanqiii</title>
-  <desc id="desc">Go, AI Agents and Cybersecurity — animated ink-wave banner</desc>
-  <defs>
-    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#071521" stop-opacity=".64"/>
-      <stop offset=".42" stop-color="#071521" stop-opacity=".18"/>
-      <stop offset="1" stop-color="#071521" stop-opacity=".12"/>
-    </linearGradient>
-    <linearGradient id="paperWave" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7FAF8" stop-opacity=".48"/>
-      <stop offset="1" stop-color="#FAFAF7" stop-opacity=".94"/>
-    </linearGradient>
-    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#071521" flood-opacity=".62"/>
-    </filter>
-  </defs>
+    background = cover_crop(Image.open(SOURCE).convert("RGB")).convert("RGBA")
+    background = ImageEnhance.Contrast(background).enhance(1.04)
+    add_left_shade(background)
 
-  <image width="1280" height="320" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,{encoded}"/>
-  <rect width="1280" height="320" fill="url(#shade)"/>
+    title_font = font(True, 62)
+    subtitle_font = font(True, 21)
+    frames: list[Image.Image] = []
+    for index in range(FRAMES):
+        phase = index / FRAMES
+        frame = background.copy()
+        draw = ImageDraw.Draw(frame, "RGBA")
 
-  <g fill="#FFFFFF" filter="url(#textShadow)" opacity="0">
-    <text x="82" y="132" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="1">Qiyuanqiii</text>
-    <text x="86" y="174" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" letter-spacing="1.2">GO  ·  AI AGENTS  ·  CYBERSECURITY</text>
-    <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
-  </g>
+        draw.text((83, 77), "Qiyuanqiii", font=title_font, fill=(4, 15, 24, 150), stroke_width=5, stroke_fill=(4, 15, 24, 110))
+        draw.text((82, 74), "Qiyuanqiii", font=title_font, fill=(255, 255, 255, 255))
+        draw.text((87, 153), "GO  ·  AI AGENTS  ·  CYBERSECURITY", font=subtitle_font, fill=(4, 15, 24, 170), stroke_width=3, stroke_fill=(4, 15, 24, 110))
+        draw.text((86, 151), "GO  ·  AI AGENTS  ·  CYBERSECURITY", font=subtitle_font, fill=(255, 255, 255, 245))
 
-  <g opacity=".62">
-    <path fill="#DDEBF0" d="M-1280 269 C-1120 239 -800 239 -640 269 C-480 299 -160 299 0 269 C160 239 480 239 640 269 C800 299 1120 299 1280 269 C1440 239 1760 239 1920 269 C2080 299 2400 299 2560 269 V320 H-1280 Z">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1280 0" dur="13s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <g opacity=".86">
-    <path fill="url(#paperWave)" d="M-1280 282 C-1120 258 -800 258 -640 282 C-480 306 -160 306 0 282 C160 258 480 258 640 282 C800 306 1120 306 1280 282 C1440 258 1760 258 1920 282 C2080 306 2400 306 2560 282 V320 H-1280 Z">
-      <animateTransform attributeName="transform" type="translate" from="-1280 0" to="0 0" dur="17s" repeatCount="indefinite"/>
-    </path>
-  </g>
-</svg>
-'''
-    OUTPUT.write_text(svg, encoding="utf-8")
-    print(f"Built {OUTPUT.relative_to(ROOT)} ({OUTPUT.stat().st_size:,} bytes)")
+        draw.polygon(wave_polygon(266, 13, 760, phase), fill=(221, 235, 240, 158))
+        draw.polygon(wave_polygon(282, 11, 690, -phase), fill=(250, 250, 247, 232))
+        frames.append(frame.convert("RGB"))
+
+    palette = frames[0].quantize(colors=224, method=Image.Quantize.MEDIANCUT)
+    indexed = [palette]
+    indexed.extend(
+        frame.quantize(palette=palette, dither=Image.Dither.FLOYDSTEINBERG)
+        for frame in frames[1:]
+    )
+    indexed[0].save(
+        OUTPUT,
+        save_all=True,
+        append_images=indexed[1:],
+        duration=95,
+        loop=0,
+        optimize=True,
+        disposal=1,
+    )
+    print(f"Built {OUTPUT.relative_to(ROOT)} ({OUTPUT.stat().st_size:,} bytes, {FRAMES} frames)")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="./assets/banner.svg" alt="Qiyuanqiii — Go, AI Agents and Cybersecurity" />
+  <img width="100%" src="./assets/banner.gif" alt="Qiyuanqiii — Go, AI Agents and Cybersecurity" />
 </p>
 
 <p align="center">
