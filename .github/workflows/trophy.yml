@@ -1,0 +1,59 @@
+name: Refresh trophy card
+
+on:
+  schedule:
+    - cron: "20 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  trophy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Fetch trophy SVG
+        env:
+          URL: "https://github-profile-trophy-pied-two.vercel.app/?username=Qiyuanqiii&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8"
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3 4 5 6; do
+            echo "[$attempt/6] Fetching trophy SVG"
+            if curl -sfL --max-time 30 "$URL" > trophy.svg.tmp 2>/dev/null \
+              && grep -q '<svg' trophy.svg.tmp \
+              && grep -q '</svg>' trophy.svg.tmp; then
+              mv trophy.svg.tmp trophy.svg
+              echo "Generated trophy.svg ($(wc -c < trophy.svg) bytes)"
+              exit 0
+            fi
+            rm -f trophy.svg.tmp
+            sleep 10
+          done
+          echo "Unable to fetch a valid trophy SVG after 6 attempts"
+          exit 1
+
+      - name: Commit updated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trophy.svg
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "chore(stats): refresh trophy card"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 5
+          done
+          exit 1
