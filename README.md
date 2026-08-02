@@ -132,8 +132,8 @@
 </p>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api?username=Qiyuanqiii&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api/top-langs/?username=Qiyuanqiii&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Most used languages" />
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api?username=Qiyuanqiii&show_icons=true&count_private=true&include_all_commits=true&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&icon_color=5B5E61&ring_color=3A3D40&border_color=D4D1C9&border_radius=0" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api/top-langs/?username=Qiyuanqiii&layout=compact&langs_count=8&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&border_color=D4D1C9&border_radius=0" alt="Most used languages" />
 </p>
 
 <p align="center">
@@ -141,7 +141,7 @@
 </p>
 
 <p align="center">
-  <img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=Qiyuanqiii&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution activity graph" />
+  <img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=Qiyuanqiii&bg_color=FAFAF7&color=5B5E61&title_color=2B2D30&line=3A3D40&point=A33A2B&area=true&area_color=B8B3A7&border_color=D4D1C9&radius=0&custom_title=Contribution%20Activity" alt="Contribution activity graph" />
 </p>
 
 <p align="center">

@@ -21,7 +21,7 @@ jobs:
 
       - name: Fetch trophy SVG
         env:
-          URL: "https://github-profile-trophy-pied-two.vercel.app/?username=Qiyuanqiii&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8"
+          URL: "https://github-profile-trophy-pied-two.vercel.app/?username=Qiyuanqiii&theme=flat&no-frame=true&row=1&column=7&margin-w=8"
         run: |
           set -euo pipefail
           for attempt in 1 2 3 4 5 6; do
@@ -38,6 +38,32 @@ jobs:
           done
           echo "Unable to fetch a valid trophy SVG after 6 attempts"
           exit 1
+
+      - name: Apply ink-wash palette
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path("trophy.svg")
+          svg = path.read_text(encoding="utf-8")
+          replacements = {
+              "#FFF": "#FAFAF7",
+              "#000": "#2B2D30",
+              "#666": "#5B5E61",
+              "#009366": "#667268",
+              "#0366d6": "#A33A2B",
+              "#eac200": "#B4A47F",
+              "#886000": "#4E493F",
+              "#B0B0B0": "#B9B6AE",
+              "#505050": "#3B3D3F",
+              "#A18D66": "#9A9488",
+              "#412D06": "#3C3933",
+              "#777": "#777872",
+              "#333": "#343638",
+          }
+          for source, target in replacements.items():
+              svg = svg.replace(source, target)
+          path.write_text(svg, encoding="utf-8")
 
       - name: Commit updated card
         run: |

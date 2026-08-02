@@ -21,7 +21,7 @@ jobs:
 
       - name: Fetch streak SVG
         env:
-          URL: "https://github-readme-streak-stats-henna-two.vercel.app/?user=Qiyuanqiii&theme=tokyonight&hide_border=true"
+          URL: "https://github-readme-streak-stats-henna-two.vercel.app/?user=Qiyuanqiii&background=FAFAF7&border=D4D1C9&stroke=D4D1C9&ring=3A3D40&fire=A33A2B&currStreakNum=2B2D30&sideNums=2B2D30&currStreakLabel=5B5E61&sideLabels=5B5E61&dates=8B8D90&border_radius=0"
         run: |
           set -euo pipefail
           for attempt in 1 2 3 4 5 6; do
