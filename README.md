@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ADD8,45:0D1117,100:7C3AED&height=220&section=header&text=Qiyuanqiii&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Go%20%7C%20AI%20Agents%20%7C%20Cybersecurity&descAlignY=60&descSize=18" alt="Qiyuanqiii banner" />
+  <img width="100%" src="./assets/banner.svg" alt="Qiyuanqiii — Go, AI Agents and Cybersecurity" />
 </p>
 
 <p align="center">
