@@ -91,14 +91,15 @@
       <sub>197 commits · Go control plane · CLI / TUI / Web / Windows Desktop</sub>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Qiyuanqiii/codex-401-doctor">codex-401-doctor</a></h3>
-      <p>A diagnostic and safe-repair tool for Codex / ChatGPT 401 errors on Windows.</p>
+      <h3><a href="https://github.com/Qiyuanqiii/Jump-Terminator">Jump Terminator</a></h3>
+      <p>An evidence-driven Android experiment for detecting and safely undoing unwanted cross-app jumps.</p>
       <p>
-        <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
-        <img src="https://img.shields.io/badge/Default-Report%20Only-2EA44F?style=flat-square" alt="Report only by default" />
+        <img src="https://img.shields.io/badge/Kotlin-Android-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin for Android" />
+        <img src="https://img.shields.io/badge/S0-Feasibility-2563EB?style=flat-square" alt="S0 feasibility study" />
+        <img src="https://img.shields.io/badge/Network-Offline%20by%20Default-2EA44F?style=flat-square" alt="Offline by default" />
       </p>
-      <p>Report-only by default, credential-safe, explicitly authorized for sensitive reads and repairs, with backups before writes.</p>
-      <sub>Bilingual docs · JSON output · deterministic local repairs</sub>
+      <p>Accessibility + UsageStats timelines, deterministic rules, one-shot Back / Home recovery, JSONL evidence export, latency truth, and real-device test matrices.</p>
+      <sub>Android 9–16 · Kotlin / Python tooling · MIUI 14 architecture documented as No-Go</sub>
     </td>
   </tr>
 </table>
