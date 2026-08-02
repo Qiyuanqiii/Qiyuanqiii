@@ -38,7 +38,6 @@ jobs:
           output_action: none
 
       - name: Apply rice-paper ink-wash palette
-        shell: python
         run: python .github/scripts/style_isocalendar.py metrics.plugin.isocalendar.svg
 
       - name: Commit updated calendar
