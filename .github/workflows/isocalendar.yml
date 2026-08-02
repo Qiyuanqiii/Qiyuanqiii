@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
       - name: Generate full-year isometric calendar
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
@@ -33,3 +35,27 @@ jobs:
           plugin_isocalendar_duration: full-year
           config_timezone: Asia/Hong_Kong
           config_display: regular
+          output_action: none
+
+      - name: Apply rice-paper ink-wash palette
+        shell: python
+        run: python .github/scripts/style_isocalendar.py metrics.plugin.isocalendar.svg
+
+      - name: Commit updated calendar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics.plugin.isocalendar.svg
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "chore(stats): refresh ink-wash isometric calendar"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 5
+          done
+          exit 1
