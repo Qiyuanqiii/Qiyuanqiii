@@ -128,8 +128,16 @@
 ## GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Qiyuanqiii&theme=github_dark" alt="GitHub stats" />
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Qiyuanqiii&theme=github_dark" alt="Most used languages by commits" />
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/trophy.svg" alt="GitHub achievement trophies" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api?username=Qiyuanqiii&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api/top-langs/?username=Qiyuanqiii&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Most used languages" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/streak.svg" alt="GitHub contribution streak" />
 </p>
 
 <p align="center">
