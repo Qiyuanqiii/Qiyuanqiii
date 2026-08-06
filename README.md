@@ -35,7 +35,7 @@
 <p align="center">🤖 <strong>LLM Toolchain</strong></p>
 
 <p align="center">
-  <img width="818" height="28" src="./assets/llm-toolchain.svg" alt="GPT-5.6 Sol · Gemini 3.6 Flash · DeepSeek-V4-Pro · MiMo-V2.5-Pro" />
+  <img width="818" height="28" src="./assets/llm-toolchain.svg" alt="GPT-5.6 Sol · Gemini 3.6 Flash · DeepSeek-V4-Flash · MiMo-V2.5-Pro" />
 </p>
 
 ---
