@@ -32,9 +32,9 @@
     <text x="674" y="18" font-size="9">XIAOMI MIMO</text>
   </g>
   <g fill="#fff" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" text-rendering="geometricPrecision">
-    <text x="145" y="18">GPT-5.6 SOL</text>
-    <text x="351" y="18">3.6 FLASH</text>
-    <text x="557" y="18">V4-PRO</text>
-    <text x="763" y="18">V2.5-PRO</text>
+    <text x="145" y="18">GPT-5.6 Sol</text>
+    <text x="351" y="18">3.6 Flash</text>
+    <text x="557" y="18">V4-Flash</text>
+    <text x="763" y="18">V2.5-Pro</text>
   </g>
 </svg>
