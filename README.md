@@ -20,7 +20,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
-  <img src="https://img.shields.io/badge/Open%20Source-46%2B%20PRs-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="Open source pull requests" />
+  <img src="https://img.shields.io/badge/Open%20Source-115%20PRs-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="115 public pull requests" />
 </p>
 
 <p align="center">📬 <strong>Connect</strong></p>
