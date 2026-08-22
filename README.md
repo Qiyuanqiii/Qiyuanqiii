@@ -150,7 +150,7 @@
 | Project | ⭐ | PRs | ✅ Merged | 🚀 Open |
 |---------|---:|----:|--------:|-------:|
 | [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 80 | 51 | 51 | 0 |
-| [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 23751 | 18 | 0 | 18 |
+| [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 23754 | 18 | 0 | 18 |
 | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 7 | 15 | 15 | 0 |
 | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 11 | 13 | 12 | 0 |
 | [`Tencent/VulnGym`](https://github.com/Tencent/VulnGym) | 232 | 12 | 0 | 12 |
