@@ -1,0 +1,58 @@
+name: Refresh issue and pull request followup
+
+on:
+  schedule:
+    - cron: "30 17 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/followup.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-followup-metrics
+  cancel-in-progress: false
+
+jobs:
+  followup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Generate PR and issue lifecycle statistics
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          filename: metrics.plugin.followup.svg
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+          plugin_followup_indepth: no
+          config_timezone: Asia/Hong_Kong
+          config_display: regular
+          output_action: none
+
+      - name: Commit updated followup card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics.plugin.followup.svg
+          if git diff --staged --quiet; then
+            echo "No followup changes"
+            exit 0
+          fi
+          git commit -m "chore(stats): refresh PR and issue followup"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 5
+          done
+          exit 1

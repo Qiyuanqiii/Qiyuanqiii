@@ -1,0 +1,101 @@
+name: Refresh all contributing projects
+
+on:
+  schedule:
+    - cron: "15 17 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/all-projects.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-all-contributing-projects
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Aggregate public PRs by external repository
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+
+          gh search prs --author "$OWNER" --limit 1000 \
+            --json repository,state \
+            --jq 'group_by(.repository.nameWithOwner)
+              | map({
+                  repo: .[0].repository.nameWithOwner,
+                  total: length,
+                  merged: ([.[] | select(.state == "merged")] | length),
+                  open: ([.[] | select(.state == "open")] | length)
+                })' \
+            | jq --arg owner "$OWNER" \
+                'map(select(.repo | startswith($owner + "/") | not))' \
+            > projects.json
+
+          : > projects_enriched.jsonl
+          jq -c '.[]' projects.json | while read -r row; do
+            repo=$(jq -r '.repo' <<<"$row")
+            stars=$(gh api "repos/$repo" --jq '.stargazers_count' 2>/dev/null || echo 0)
+            jq --argjson stars "$stars" '. + {stars: $stars}' <<<"$row" >> projects_enriched.jsonl
+          done
+
+          jq -s 'sort_by(-.total, -.stars, .repo)' projects_enriched.jsonl > projects_final.json
+          jq -r '
+            .[] | "| [`\(.repo)`](https://github.com/\(.repo)) | \(.stars) | \(.total) | \(.merged) | \(.open) |"
+          ' projects_final.json > rows.md
+
+          {
+            echo "| Project | ⭐ | PRs | ✅ Merged | 🚀 Open |"
+            echo "|---------|---:|----:|--------:|-------:|"
+            cat rows.md
+          } > block.md
+
+          awk '
+            /<!--START_SECTION:all-projects-->/ {
+              print
+              while ((getline line < "block.md") > 0) print line
+              close("block.md")
+              skip = 1
+              next
+            }
+            /<!--END_SECTION:all-projects-->/ {
+              skip = 0
+              print
+              next
+            }
+            !skip { print }
+          ' README.md > README.md.new
+          mv README.md.new README.md
+
+          rm -f projects.json projects_enriched.jsonl projects_final.json rows.md block.md
+
+      - name: Commit updated project table
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No project-table changes"
+            exit 0
+          fi
+          git commit -m "chore(readme): refresh contributing projects"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 5
+          done
+          exit 1
