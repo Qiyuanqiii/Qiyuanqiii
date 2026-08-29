@@ -149,14 +149,14 @@
 <!--START_SECTION:all-projects-->
 | Project | ⭐ | PRs | ✅ Merged | 🚀 Open |
 |---------|---:|----:|--------:|-------:|
-| [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 135 | 84 | 84 | 0 |
-| [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 25037 | 18 | 0 | 18 |
-| [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 21576 | 16 | 9 | 7 |
+| [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 146 | 84 | 84 | 0 |
+| [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 25144 | 18 | 0 | 18 |
+| [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 21620 | 16 | 9 | 7 |
 | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 7 | 15 | 15 | 0 |
 | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 11 | 13 | 12 | 0 |
 | [`Tencent/VulnGym`](https://github.com/Tencent/VulnGym) | 237 | 12 | 0 | 12 |
 | [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | 24 | 12 | 12 | 0 |
-| [`open-city-ai/haidian`](https://github.com/open-city-ai/haidian) | 399 | 3 | 3 | 0 |
+| [`open-city-ai/haidian`](https://github.com/open-city-ai/haidian) | 401 | 3 | 3 | 0 |
 | [`Ricky-7-Yan/TencentDB-Agent-Memory`](https://github.com/Ricky-7-Yan/TencentDB-Agent-Memory) | 0 | 2 | 0 | 2 |
 <!--END_SECTION:all-projects-->
 
