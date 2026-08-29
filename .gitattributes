@@ -1,0 +1,10 @@
+# Normalize line endings for text files (LF in repo, native on checkout)
+* text=auto
+
+# Treat binary assets as binary so git never rewrites their line endings
+*.gif binary
+*.mp4 binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.png binary
