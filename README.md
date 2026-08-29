@@ -195,6 +195,13 @@
   </picture>
 </p>
 
+<details>
+  <summary><strong>🔧 About this profile</strong></summary>
+  <br />
+
+  The streak, trophy, contribution calendar, and snake animations on this page are regenerated automatically by [GitHub Actions](./.github/workflows) and committed back to this repository. Only the [README](./README.md) and the [assets](./assets) are hand-maintained.
+</details>
+
 <p align="center">
   <sub>Build the system. Verify the boundary. Ship the fix.</sub>
 </p>
