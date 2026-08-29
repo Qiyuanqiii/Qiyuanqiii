@@ -163,35 +163,35 @@
 ## GitHub Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/trophy.svg" alt="GitHub achievement trophies" />
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/trophy.svg" alt="GitHub achievement trophies" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api?username=Qiyuanqiii&show_icons=true&count_private=true&include_all_commits=true&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&icon_color=5B5E61&ring_color=3A3D40&border_color=D4D1C9&border_radius=0" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api/top-langs/?username=Qiyuanqiii&layout=compact&langs_count=8&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&border_color=D4D1C9&border_radius=0" alt="Most used languages" />
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api?username=Qiyuanqiii&show_icons=true&count_private=true&include_all_commits=true&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&icon_color=5B5E61&ring_color=3A3D40&border_color=D4D1C9&border_radius=0" alt="GitHub stats" loading="lazy" decoding="async" />
+  <img height="170" src="https://github-readme-stats-ivory-omega.vercel.app/api/top-langs/?username=Qiyuanqiii&layout=compact&langs_count=8&bg_color=FAFAF7&title_color=2B2D30&text_color=404347&border_color=D4D1C9&border_radius=0" alt="Most used languages" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/streak.svg" alt="GitHub contribution streak" />
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/streak.svg" alt="GitHub contribution streak" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
-  <img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=Qiyuanqiii&bg_color=FAFAF7&color=5B5E61&title_color=2B2D30&line=3A3D40&point=A33A2B&area=true&area_color=B8B3A7&border_color=D4D1C9&radius=0&custom_title=Contribution%20Activity" alt="Contribution activity graph" />
+  <img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=Qiyuanqiii&bg_color=FAFAF7&color=5B5E61&title_color=2B2D30&line=3A3D40&point=A33A2B&area=true&area_color=B8B3A7&border_color=D4D1C9&radius=0&custom_title=Contribution%20Activity" alt="Contribution activity graph" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/metrics.plugin.followup.svg" alt="Issue and pull request lifecycle statistics" />
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/metrics.plugin.followup.svg" alt="Issue and pull request lifecycle statistics" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/metrics.plugin.isocalendar.svg" alt="Isometric contribution calendar" />
+  <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/metrics.plugin.isocalendar.svg" alt="Isometric contribution calendar" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/output/github-contribution-grid-snake.svg" />
-    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/output/github-contribution-grid-snake.svg" />
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/output/github-contribution-grid-snake.svg" loading="lazy" decoding="async" />
   </picture>
 </p>
 
