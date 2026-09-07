@@ -74,7 +74,9 @@ def render(font_dir, theme, mobile):
 
     # Separate human rank from the total-contributor denominator in the README note.
     centered("Human contributor rank", label, 16 if mobile else 18, 234 if mobile else 244, colors["body"])
-    centered(rank, regular, 36 if mobile else 40, 280 if mobile else 295, colors["ink"])
+    # Use lining figures for the rank; Georgia's old-style digits vary in height.
+    # Keep them subordinate to the project name and optically centered in the row.
+    centered(rank, brand, 32 if mobile else 34, 278 if mobile else 291, colors["ink"])
     y = 311 if mobile else 328
     elements.append(f'<path d="M{margin} {y}H{width - margin}" stroke="{colors["rule"]}"/>')
     y += 27
