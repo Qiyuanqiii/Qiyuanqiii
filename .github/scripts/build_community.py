@@ -41,11 +41,37 @@ def logo_path():
             + '" fill-rule="' + escape(path.attrib["fill-rule"], quote=True) + '"/>')
 
 
+def serif_rank_face(font_dir):
+    """Use Georgia's native lining figures without changing the body typeface."""
+    face = Typeface(font_dir / "georgia.ttf", "n")
+    if "GSUB" not in face.font:
+        raise ValueError("Georgia must include the OpenType lnum feature")
+    table = face.font["GSUB"].table
+    feature = next((record.Feature for record in table.FeatureList.FeatureRecord
+                    if record.FeatureTag == "lnum"), None)
+    if feature is None:
+        raise ValueError("Georgia must include the OpenType lnum feature")
+    substitutions = {}
+    for index in feature.LookupListIndex:
+        lookup = table.LookupList.Lookup[index]
+        if lookup.LookupType != 1:
+            raise ValueError("Expected single-glyph substitutions for Georgia lnum")
+        for subtable in lookup.SubTable:
+            substitutions.update(subtable.mapping)
+    for digit in "0123456789":
+        glyph = face.cmap[ord(digit)]
+        if glyph not in substitutions:
+            raise ValueError(f"Missing lining figure for {digit}")
+        face.cmap[ord(digit)] = substitutions[glyph]
+    return face
+
+
 def render(font_dir, theme, mobile):
     regular = Typeface(font_dir / "georgia.ttf", "r")
     italic = Typeface(font_dir / "georgiai.ttf", "i")
     brand = Typeface(font_dir / "seguisb.ttf", "b")
     label = Typeface(font_dir / "segoeui.ttf", "s")
+    rank_face = serif_rank_face(font_dir)
     title, repository, rank, items = source()
     colors = PALETTES[theme]
     width = 440 if mobile else 960
@@ -74,9 +100,9 @@ def render(font_dir, theme, mobile):
 
     # Separate human rank from the total-contributor denominator in the README note.
     centered("Human contributor rank", label, 16 if mobile else 18, 234 if mobile else 244, colors["body"])
-    # Use lining figures for the rank; Georgia's old-style digits vary in height.
+    # Preserve Georgia's serifs while using its native, full-height lining figures.
     # Keep them subordinate to the project name and optically centered in the row.
-    centered(rank, brand, 32 if mobile else 34, 278 if mobile else 291, colors["ink"])
+    centered(rank, rank_face, 32 if mobile else 34, 278 if mobile else 291, colors["ink"])
     y = 311 if mobile else 328
     elements.append(f'<path d="M{margin} {y}H{width - margin}" stroke="{colors["rule"]}"/>')
     y += 27
@@ -97,7 +123,7 @@ def render(font_dir, theme, mobile):
         y = bottom + (26 if mobile else 32)
     height = round(y + 14)
     description = f"{title}. Human contributor rank {rank}. " + " ".join(body for _, body in items)
-    definitions = "\n".join(face.definitions() for face in (regular, italic, brand, label))
+    definitions = "\n".join(face.definitions() for face in (regular, italic, brand, label, rank_face))
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">\n'
            f'<title id="title">{escape(title)} — my open-source contributions</title>\n'
            f'<desc id="desc">{escape(description)}</desc>\n'
