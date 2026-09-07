@@ -40,11 +40,40 @@
 
 ---
 
-## What I build
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/ai-philosophy-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="./assets/ai-philosophy-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/ai-philosophy-dark.svg" />
+    <img width="100%" src="./assets/ai-philosophy-light.svg" alt="How I work with AI — my approach to planning, agent collaboration, independent review, and human responsibility. Full text follows." />
+  </picture>
+</p>
 
-- **Agent Systems** — Build local-first coding workbenches with resumable runs, explicit permissions, approval-gated Git workflows, LSP/MCP integration, and evidence-bound automation.
-- **Reliability & Security** — Fix lifecycle, authentication, compatibility, and data-integrity failures across desktop, Android, browser tooling, and security research projects.
-- **Open Knowledge** — Turn engineering lessons into maintainable documentation, student resources, reproducible artifacts, and public-interest technical work.
+<details>
+<summary>Read as text</summary>
+
+<!--START_SECTION:ai-philosophy-text-->
+## How I work with AI
+
+I bring AI into every stage of a project, from defining the problem to verifying the result. My role is to give that collaboration direction, structure, and a clear standard of completion.
+
+I start with a goal and its boundaries. Together with the most capable AI available for the task, I research the problem, explore existing products and reusable work, and capture the plan in a GitHub issue. We then break it into smaller issues, each with explicit dependencies, constraints, and acceptance criteria.
+
+Development becomes a collaboration between agents. Several handle implementation, tests, and supporting evidence. My strongest reviewer coordinates their work and critically assesses whether the code is robust, maintainable, and ready to ship. Another agent independently examines those judgments—questioning assumptions, framework choices, and unnecessary complexity. Both the implementation and the reasoning behind its approval remain open to revision.
+
+I stay close to the work throughout: following progress, clarifying intent, keeping scope under control, and resolving consequential trade-offs. I remain responsible for the direction and the outcome.
+
+Software takes many steps. Each conversation can clarify a requirement, challenge an assumption, or produce a small, verified improvement. I believe lasting work grows through the patient accumulation of those steps.
+
+> “A tree that fills the arms grows from a tiny shoot;
+> a terrace nine storeys high rises from a mound of earth.”
+>
+> — *Tao Te Ching*, Chapter 64
+
+*Per aspera ad astra.*
+<!--END_SECTION:ai-philosophy-text-->
+
+</details>
 
 ## Tech Stack
 
