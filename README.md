@@ -56,60 +56,7 @@
   <sub><strong>Languages</strong> · Go · Rust · Python · TypeScript &nbsp;│&nbsp; <strong>App Development</strong> · React · Node.js · Wails &nbsp;│&nbsp; <strong>AI Coding</strong> · Codex · Claude Code</sub>
 </p>
 
-## Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/CWNU-Open-Source-Community/Traverse-Board">Traverse Board · 针路簿</a></h3>
-      <p>A local-first, resumable, and auditable AI coding workbench for controlled, evidence-backed workflows.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Go-90.6%25-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-        <img src="https://img.shields.io/badge/Wails-Desktop-DF0000?style=flat-square" alt="Wails" />
-        <img src="https://img.shields.io/badge/React-Workbench-61DAFB?style=flat-square&logo=react&logoColor=0D1117" alt="React" />
-      </p>
-      <p>Workspace permission contracts, transactional checkpoints, approval-gated Git, a Go-owned LSP runtime, MCP/plugins, durable monitoring, and Windows delivery.</p>
-      <sub>#1 contributor · 51 merged PRs · 445 repository contributions</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Qiyuanqiii/Jump-Terminator">Jump Terminator</a></h3>
-      <p>An evidence-driven Android experiment for detecting and safely undoing unwanted cross-app jumps.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Kotlin-Android-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin for Android" />
-        <img src="https://img.shields.io/badge/S0-Feasibility-2563EB?style=flat-square" alt="S0 feasibility study" />
-        <img src="https://img.shields.io/badge/Network-Offline%20by%20Default-2EA44F?style=flat-square" alt="Offline by default" />
-      </p>
-      <p>Accessibility + UsageStats timelines, deterministic rules, one-shot Back / Home recovery, JSONL evidence export, latency truth, and real-device test matrices.</p>
-      <sub>Android 9–16 · Kotlin / Python tooling · MIUI 14 architecture documented as No-Go</sub>
-    </td>
-  </tr>
-</table>
-
-## Open Source Footprint
-
-| Area | Project | Selected work |
-|---|---|---|
-| Agent workbench | [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 51 merged PRs spanning permissions, Git/LSP/MCP workflows, automation, persistence, and Windows delivery |
-| Android reliability | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 12 merged PRs for lifecycle safety, authentication, background refresh, notifications, and real-device QA |
-| Agent memory & security | [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) · [`Tencent/VulnGym`](https://github.com/Tencent/VulnGym) | Memory adapters, capture semantics, provenance, vulnerability-chain data, and auditable evaluation tooling |
-| Browser tooling | [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | 12 merged PRs covering selector-drift recovery, targeted repair, compatibility, and release packaging |
-| Code review | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 12 merged PRs spanning provider validation, LLM and tool-call safeguards, language-specific review rules, and multilingual documentation |
-| Student community | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 15 merged PRs adding a 3D campus map, course guides, newcomer resources, and privacy-processed materials |
-
-<details>
-  <summary><strong>Selected pull requests</strong></summary>
-  <br />
-
-- [`Traverse-Board#143`](https://github.com/CWNU-Open-Source-Community/Traverse-Board/pull/143) — add an explicit Workspace Access permission contract
-- [`Traverse-Board#119`](https://github.com/CWNU-Open-Source-Community/Traverse-Board/pull/119) — introduce a Go-owned, read-only LSP runtime for code intelligence
-- [`DeepSeekMeter#23`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter/pull/23) — close the Android background-refresh loop with WorkManager and low-balance notifications
-- [`Search-Translate-Guard#6`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub/pull/6) — add local rule health checks and targeted repair for selector drift
-- [`open-code-review#512`](https://github.com/alibaba/open-code-review/pull/512) — reorganize coding-agent integrations across five localized READMEs
-- [`haidian#1754`](https://github.com/open-city-ai/haidian/pull/1754) — extend the First Train urban-design submission with multimodal deliverables
-
-</details>
-
-### 🏅 Highest Contributor Rankings
+## 🏅 Highest Contributor Rankings
 
 <sub>Top five external projects where I currently rank highest in GitHub's contributors graph.</sub>
 
@@ -123,7 +70,7 @@
 
 <sub>Ranking follows GitHub's contributor ordering by repository contribution count; it is separate from PR volume.</sub>
 
-### 🌐 All Contributing Projects
+## 🌐 All Contributing Projects
 
 <sub>Auto-aggregated from every public PR opened against external repositories — refreshed daily.</sub>
 
