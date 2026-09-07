@@ -48,32 +48,13 @@
 
 ## Tech Stack
 
-<table>
-  <tr>
-    <td><strong>Programming Languages</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-      <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Application Development</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=0D1117" alt="React" />
-      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-      <img src="https://img.shields.io/badge/Wails-DF0000?style=for-the-badge&logoColor=white" alt="Wails" />
-    </td>
-  </tr>
-  <tr>
-    <td><strong>AI Coding Tools</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/Codex-0D1117?style=for-the-badge&logo=openai&logoColor=white" alt="Codex" />
-      <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img width="900" src="./assets/tech-stack.svg" alt="Animated technology stack: Go, Rust, Python, TypeScript, React, Node.js, Wails, Codex, and Claude Code" />
+</p>
+
+<p align="center">
+  <sub><strong>Languages</strong> · Go · Rust · Python · TypeScript &nbsp;│&nbsp; <strong>App Development</strong> · React · Node.js · Wails &nbsp;│&nbsp; <strong>AI Coding</strong> · Codex · Claude Code</sub>
+</p>
 
 ## Featured Projects
 
@@ -112,7 +93,7 @@
 | Android reliability | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 12 merged PRs for lifecycle safety, authentication, background refresh, notifications, and real-device QA |
 | Agent memory & security | [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) · [`Tencent/VulnGym`](https://github.com/Tencent/VulnGym) | Memory adapters, capture semantics, provenance, vulnerability-chain data, and auditable evaluation tooling |
 | Browser tooling | [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | 12 merged PRs covering selector-drift recovery, targeted repair, compatibility, and release packaging |
-| Code review | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | Coding-agent integration docs, localization, and configuration guidance across 5 merged PRs |
+| Code review | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 12 merged PRs spanning provider validation, LLM and tool-call safeguards, language-specific review rules, and multilingual documentation |
 | Student community | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 15 merged PRs adding a 3D campus map, course guides, newcomer resources, and privacy-processed materials |
 
 <details>
@@ -138,7 +119,7 @@
 | **#2** | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | **#1 / 5** | Android authentication · WorkManager · lifecycle safety · QA |
 | **#3** | [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | **#1 / 2** | Selector-drift recovery · targeted repair · compatibility |
 | **#4** | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | **#2 / 4** | 3D campus map · course guides · newcomer resources |
-| **#5** | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | **#16 / 135** | Coding-agent integrations · localization · configuration docs |
+| **#5** | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | **#7 / 152** | Provider validation · LLM/tool-call safety · language rules · multilingual docs |
 
 <sub>Ranking follows GitHub's contributor ordering by repository contribution count; it is separate from PR volume.</sub>
 
@@ -150,7 +131,7 @@
 | Project | ⭐ | PRs | ✅ Merged | 🚀 Open |
 |---------|---:|----:|--------:|-------:|
 | [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 178 | 85 | 84 | 1 |
-| [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 21984 | 19 | 10 | 9 |
+| [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 22029 | 19 | 12 | 7 |
 | [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 26010 | 18 | 0 | 18 |
 | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 8 | 17 | 17 | 0 |
 | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 11 | 13 | 12 | 0 |

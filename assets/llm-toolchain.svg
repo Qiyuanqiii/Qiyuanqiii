@@ -10,6 +10,7 @@
     <rect width="90" height="28" fill="#555"/>
     <rect x="90" width="110" height="28" fill="#fff"/>
   </g>
+  <rect x=".5" y=".5" width="199" height="27" rx="2.5" fill="none" stroke="#555"/>
   <g clip-path="url(#b)">
     <rect x="206" width="90" height="28" fill="#555"/>
     <rect x="296" width="110" height="28" fill="#D97757"/>
@@ -37,8 +38,8 @@
   </g>
   <g fill="#fff" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" text-rendering="geometricPrecision">
     <text x="145" y="18" fill="#111">GPT-6 Astra</text>
-    <text x="351" y="18">Opus 5</text>
-    <text x="557" y="18">4.6</text>
-    <text x="763" y="18">K3</text>
+    <text x="351" y="18">Claude Opus 5</text>
+    <text x="557" y="18">Grok 4.6</text>
+    <text x="763" y="18">Kimi K3</text>
   </g>
 </svg>
