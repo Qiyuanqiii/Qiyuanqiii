@@ -85,37 +85,40 @@ Software takes many steps. Each conversation can clarify a requirement, challeng
   <sub><strong>Languages</strong> · Go · Rust · Python · TypeScript &nbsp;│&nbsp; <strong>App Development</strong> · React · Node.js · Wails &nbsp;│&nbsp; <strong>AI Coding</strong> · Codex · Claude Code</sub>
 </p>
 
-## 🏅 Highest Contributor Rankings
+## Find me in open source
 
-<sub>Top five external projects where I currently rank highest in GitHub's contributors graph.</sub>
+You can find me in the following open-source community.
 
-| Rank | Project | My Contributor Rank | Contribution Signal |
-|---:|---|---:|---|
-| **#1** | [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | **#1 / 3** | Agent runtime · permission boundaries · Git/LSP/MCP · Windows desktop |
-| **#2** | [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | **#1 / 5** | Android authentication · WorkManager · lifecycle safety · QA |
-| **#3** | [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | **#1 / 2** | Selector-drift recovery · targeted repair · compatibility |
-| **#4** | [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | **#2 / 4** | 3D campus map · course guides · newcomer resources |
-| **#5** | [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | **#7 / 152** | Provider validation · LLM/tool-call safety · language rules · multilingual docs |
+<p align="center">
+  <a href="https://github.com/alibaba/open-code-review">
+    <picture>
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-mobile-dark.svg" />
+      <source media="(max-width: 600px)" srcset="./assets/community-open-code-review-mobile-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-dark.svg" />
+      <img width="100%" src="./assets/community-open-code-review-light.svg" alt="OpenCodeReview — human contributor rank #6 / 162. Issue assessment, PR review, personal-branch SVN support, and validation and fixes. Full text follows." />
+    </picture>
+  </a>
+</p>
 
-<sub>Ranking follows GitHub's contributor ordering by repository contribution count; it is separate from PR volume.</sub>
+<details>
+<summary>Read my contributions as text</summary>
 
-## 🌐 All Contributing Projects
+<!--START_SECTION:community-text-->
+### [OpenCodeReview](https://github.com/alibaba/open-code-review)
 
-<sub>Auto-aggregated from every public PR opened against external repositories — refreshed daily.</sub>
+**Human contributor rank: #6 / 162**
 
-<!--START_SECTION:all-projects-->
-| Project | ⭐ | PRs | ✅ Merged | 🚀 Open |
-|---------|---:|----:|--------:|-------:|
-| [`CWNU-Open-Source-Community/Traverse-Board`](https://github.com/CWNU-Open-Source-Community/Traverse-Board) | 178 | 85 | 85 | 0 |
-| [`alibaba/open-code-review`](https://github.com/alibaba/open-code-review) | 22039 | 19 | 12 | 7 |
-| [`TencentCloud/TencentDB-Agent-Memory`](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 26071 | 18 | 0 | 18 |
-| [`CWNU-Open-Source-Community/SCSWiki`](https://github.com/CWNU-Open-Source-Community/SCSWiki) | 8 | 17 | 17 | 0 |
-| [`CWNU-Open-Source-Community/DeepSeekMeter`](https://github.com/CWNU-Open-Source-Community/DeepSeekMeter) | 11 | 13 | 12 | 0 |
-| [`Tencent/VulnGym`](https://github.com/Tencent/VulnGym) | 245 | 12 | 0 | 12 |
-| [`silentmeowing/Search-Translate-Guard-for-GitHub`](https://github.com/silentmeowing/Search-Translate-Guard-for-GitHub) | 23 | 12 | 12 | 0 |
-| [`open-city-ai/haidian`](https://github.com/open-city-ai/haidian) | 407 | 3 | 3 | 0 |
-| [`Ricky-7-Yan/TencentDB-Agent-Memory`](https://github.com/Ricky-7-Yan/TencentDB-Agent-Memory) | 0 | 2 | 0 | 2 |
-<!--END_SECTION:all-projects-->
+My contributions:
+
+- **Issue assessment.** I assess the rationale, feasibility, and scope of proposed changes.
+- **PR review.** I review pull requests for security vulnerabilities, robustness, and failure handling.
+- **SVN support.** I develop Subversion (SVN) support on my personal branch, separate from upstream.
+- **Validation & fixes.** I validate and fix data-handling vulnerabilities, boundary-condition errors, and overflow issues.
+<!--END_SECTION:community-text-->
+
+</details>
+
+<sub>Snapshot: 8 September 2026. Rank excludes bot accounts; 162 is GitHub's displayed contributor total, not a human-only count. [Contributors](https://github.com/alibaba/open-code-review/graphs/contributors) · [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
 
 ## GitHub Activity
 
