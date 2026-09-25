@@ -5,7 +5,7 @@ Requires Python and fonttools, as does build_ai_philosophy.py. Run:
 
 The README's community-text block is the source for the name, rank, and work.
 The logo is the upstream SVG preserved in assets, with attribution alongside it.
-Rank and total are intentionally manual, not fetched from an API by this script.
+Rank and total are refreshed in the README by refresh_profile_stats.py.
 """
 
 import argparse
@@ -24,10 +24,10 @@ def source():
         raise ValueError("README community markers are missing")
     passage = match.group(1)
     project = re.search(r"^### \[([^\]]+)\]\((https://github.com/[^)]+)\)$", passage, re.M)
-    rank = re.search(r"\*\*Human contributor rank: (#[0-9]+ / [0-9]+)\*\*", passage)
+    rank = re.search(r"\*\*Commit contributor rank: (#[0-9]+ / [0-9]+)\*\*", passage)
     items = re.findall(r"^- \*\*(.+?)\.\*\* (.+)$", passage, re.M)
     if not project or not rank or len(items) != 4:
-        raise ValueError("Expected a project link, manual rank, and four contribution items")
+        raise ValueError("Expected a project link, commit rank, and four contribution items")
     return project.group(1), project.group(2).removeprefix("https://github.com/"), rank.group(1), items
 
 
@@ -98,8 +98,7 @@ def render(font_dir, theme, mobile):
     centered(title, brand, 34 if mobile else 40, 162 if mobile else 170, colors["ink"])
     centered(repository, label, 16 if mobile else 18, 191 if mobile else 201, colors["muted"])
 
-    # Separate human rank from the total-contributor denominator in the README note.
-    centered("Human contributor rank", label, 16 if mobile else 18, 234 if mobile else 244, colors["body"])
+    centered("Commit contributor rank", label, 16 if mobile else 18, 234 if mobile else 244, colors["body"])
     # Preserve Georgia's serifs while using its native, full-height lining figures.
     # Keep them subordinate to the project name and optically centered in the row.
     centered(rank, rank_face, 32 if mobile else 34, 278 if mobile else 291, colors["ink"])
@@ -122,7 +121,7 @@ def render(font_dir, theme, mobile):
             bottom = max(bottom, end)
         y = bottom + (26 if mobile else 32)
     height = round(y + 14)
-    description = f"{title}. Human contributor rank {rank}. " + " ".join(body for _, body in items)
+    description = f"{title}. Commit contributor rank {rank}. " + " ".join(body for _, body in items)
     definitions = "\n".join(face.definitions() for face in (regular, italic, brand, label, rank_face))
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">\n'
            f'<title id="title">{escape(title)} — my open-source contributions</title>\n'

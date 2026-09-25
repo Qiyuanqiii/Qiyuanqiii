@@ -20,8 +20,10 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
-  <img src="https://img.shields.io/badge/Open%20Source-145%20PRs%20%C2%B7%20105%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="145 public pull requests, 105 merged" />
+  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-213%20PRs%20%C2%B7%20164%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="213 public authored pull requests, 164 merged" /></a>
 </p>
+
+<p align="center"><sub id="pr-snapshot">213 public PRs authored · 164 merged · includes personal repositories · snapshot 25 September 2026 · <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic">GitHub search</a></sub></p>
 
 <p align="center">📬 <strong>Connect</strong></p>
 
@@ -95,7 +97,7 @@ You can find me in the following open-source community.
       <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-mobile-dark.svg" />
       <source media="(max-width: 600px)" srcset="./assets/community-open-code-review-mobile-light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-dark.svg" />
-      <img width="100%" src="./assets/community-open-code-review-light.svg" alt="OpenCodeReview — human contributor rank #6 / 162. Issue assessment, PR review, personal-branch SVN support, and validation and fixes. Full text follows." />
+      <img width="100%" src="./assets/community-open-code-review-light.svg" alt="OpenCodeReview — commit contributor rank #5 / 191. Issue assessment, PR review, personal-branch SVN support, and validation and fixes. Full text follows." />
     </picture>
   </a>
 </p>
@@ -106,7 +108,7 @@ You can find me in the following open-source community.
 <!--START_SECTION:community-text-->
 ### [OpenCodeReview](https://github.com/alibaba/open-code-review)
 
-**Human contributor rank: #6 / 162**
+**Commit contributor rank: #5 / 191**
 
 My contributions:
 
@@ -118,7 +120,7 @@ My contributions:
 
 </details>
 
-<sub>Snapshot: 8 September 2026. Rank excludes bot accounts; 162 is GitHub's displayed contributor total, not a human-only count. [Contributors](https://github.com/alibaba/open-code-review/graphs/contributors) · [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
+<sub>Snapshot: 25 September 2026. Ranked by 18 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
 
 ## GitHub Activity
 
@@ -133,10 +135,6 @@ My contributions:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Qiyuanqiii/Qiyuanqiii/main/streak.svg" alt="GitHub contribution streak" loading="lazy" decoding="async" />
-</p>
-
-<p align="center">
-  <img width="900" src="https://github-readme-activity-graph.vercel.app/graph?username=Qiyuanqiii&bg_color=FAFAF7&color=5B5E61&title_color=2B2D30&line=3A3D40&point=A33A2B&area=true&area_color=B8B3A7&border_color=D4D1C9&radius=0&custom_title=Contribution%20Activity" alt="Contribution activity graph" loading="lazy" decoding="async" />
 </p>
 
 <p align="center">
@@ -159,7 +157,7 @@ My contributions:
   <summary><strong>🔧 About this profile</strong></summary>
   <br />
 
-  The streak, trophy, contribution calendar, and snake animations on this page are regenerated automatically by [GitHub Actions](./.github/workflows) and committed back to this repository. Only the [README](./README.md) and the [assets](./assets) are hand-maintained.
+  The PR badge, commit rank, streak, trophy, contribution calendar, and snake animations are refreshed by [GitHub Actions](./.github/workflows). The rank uses GitHub's contributor API and counts attributed commits; the PR badge counts public PRs authored across GitHub, including personal repositories. Other prose and artwork are maintained in this repository.
 </details>
 
 <p align="center">
