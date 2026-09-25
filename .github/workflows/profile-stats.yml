@@ -1,0 +1,60 @@
+name: Refresh public contribution stats
+
+on:
+  schedule:
+    - cron: "10 17 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/profile-stats.yml
+      - .github/scripts/refresh_profile_stats.py
+      - .github/scripts/build_community.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-public-contribution-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: windows-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Install SVG card dependency
+        run: python -m pip install fonttools==4.63.0
+
+      - name: Refresh GitHub data and existing community cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/scripts/refresh_profile_stats.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python .github/scripts/build_community.py --font-dir C:/Windows/Fonts
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Commit refreshed snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/community-open-code-review-*.svg
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "chore(profile): refresh public contribution stats"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 5
+          done
+          exit 1
