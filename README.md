@@ -20,10 +20,10 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
-  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-213%20PRs%20%C2%B7%20164%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="213 public authored pull requests, 164 merged" /></a>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-214%20PRs%20%C2%B7%20165%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="214 public authored pull requests, 165 merged" /></a>
 </p>
 
-<p align="center"><sub id="pr-snapshot">213 public PRs authored · 164 merged · includes personal repositories · snapshot 25 September 2026 · <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic">GitHub search</a></sub></p>
+<p align="center"><sub id="pr-snapshot">214 public PRs authored · 165 merged · includes personal repositories · snapshot 25 September 2026 · <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic">GitHub search</a></sub></p>
 
 <p align="center">📬 <strong>Connect</strong></p>
 
