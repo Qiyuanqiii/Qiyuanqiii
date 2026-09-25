@@ -79,12 +79,6 @@ def replace_once(text: str, pattern: str, replacement: str) -> str:
 
 
 def update_readme(readme: str, prs: int, merged: int, rank: int, people: int, commits: int, today: str) -> str:
-    if 'id="pr-snapshot"' not in readme:
-        marker = '<p align="center">📬 <strong>Connect</strong></p>'
-        if readme.count(marker) != 1:
-            raise ValueError("Could not place the PR snapshot")
-        newline = "\r\n" if "\r\n" in readme else "\n"
-        readme = readme.replace(marker, '<p align="center"><sub id="pr-snapshot"></sub></p>' + newline * 2 + marker)
     readme = replace_once(
         readme,
         r'(?:<a href="https://github\.com/pulls\?q=is%3Apr\+author%3AQiyuanqiii(?:\+is%3Apublic)?">)?<img src="(?:https://img\.shields\.io/badge/Open%20Source-[^"]+|\./assets/open-source-prs\.svg)" alt="[^"]+" />(?:</a>)?',
@@ -92,13 +86,12 @@ def update_readme(readme: str, prs: int, merged: int, rank: int, people: int, co
          f'<img src="https://img.shields.io/badge/Open%20Source-{prs}%20PRs%20%C2%B7%20{merged}%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" '
          f'alt="{prs} public authored pull requests, {merged} merged" /></a>'),
     )
-    readme = replace_once(
-        readme,
-        r'<sub id="pr-snapshot">.*?</sub>',
-        (f'<sub id="pr-snapshot">{prs} public PRs authored · {merged} merged · '
-         f'includes personal repositories · snapshot {today} · '
-         f'<a href="https://github.com/pulls?q=is%3Apr+author%3A{USER}+is%3Apublic">GitHub search</a></sub>'),
-    )
+    if 'id="pr-snapshot"' in readme:
+        readme = replace_once(
+            readme,
+            r'<p align="center"><sub id="pr-snapshot">.*?</sub></p>\r?\n\r?\n',
+            "",
+        )
     readme = replace_once(
         readme,
         r'\*\*(?:Human|Commit) contributor rank: #[0-9]+ / [0-9]+\*\*',
