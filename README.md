@@ -20,7 +20,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
-  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-217%20PRs%20%C2%B7%20165%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="217 public authored pull requests, 165 merged" /></a>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-223%20PRs%20%C2%B7%20169%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="223 public authored pull requests, 169 merged" /></a>
 </p>
 
 <p align="center">📬 <strong>Connect</strong></p>
@@ -95,7 +95,7 @@ You can find me in the following open-source community.
       <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-mobile-dark.svg" />
       <source media="(max-width: 600px)" srcset="./assets/community-open-code-review-mobile-light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="./assets/community-open-code-review-dark.svg" />
-      <img width="100%" src="./assets/community-open-code-review-light.svg" alt="OpenCodeReview — commit contributor rank #5 / 191. Issue assessment, PR review, personal-branch SVN support, and validation and fixes. Full text follows." />
+      <img width="100%" src="./assets/community-open-code-review-light.svg" alt="OpenCodeReview — commit contributor rank #5 / 192. Issue assessment, PR review, personal-branch SVN support, and validation and fixes. Full text follows." />
     </picture>
   </a>
 </p>
@@ -106,7 +106,7 @@ You can find me in the following open-source community.
 <!--START_SECTION:community-text-->
 ### [OpenCodeReview](https://github.com/alibaba/open-code-review)
 
-**Commit contributor rank: #5 / 191**
+**Commit contributor rank: #5 / 192**
 
 My contributions:
 
@@ -118,7 +118,7 @@ My contributions:
 
 </details>
 
-<sub>Snapshot: 29 September 2026. Ranked by 18 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
+<sub>Snapshot: 30 September 2026. Ranked by 19 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
 
 ## GitHub Activity
 
