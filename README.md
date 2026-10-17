@@ -20,7 +20,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Qiyuanqiii&style=for-the-badge&color=0891B2&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/Qiyuanqiii?style=for-the-badge&color=7C3AED&logo=github&label=Followers" alt="Followers" />
-  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-305%20PRs%20%C2%B7%20249%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="305 public authored pull requests, 249 merged" /></a>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3AQiyuanqiii+is%3Apublic"><img src="https://img.shields.io/badge/Open%20Source-313%20PRs%20%C2%B7%20258%20Merged-2EA44F?style=for-the-badge&logo=git&logoColor=white" alt="313 public authored pull requests, 258 merged" /></a>
 </p>
 
 <p align="center">📬 <strong>Connect</strong></p>
@@ -118,7 +118,7 @@ My contributions:
 
 </details>
 
-<sub>Snapshot: 17 October 2026. Ranked by 21 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
+<sub>Snapshot: 18 October 2026. Ranked by 21 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
 
 ## GitHub Activity
 
