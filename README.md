@@ -118,7 +118,7 @@ My contributions:
 
 </details>
 
-<sub>Snapshot: 20 November 2026. Ranked by 25 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
+<sub>Snapshot: 21 November 2026. Ranked by 25 attributed commits in [GitHub's contributor list](https://github.com/alibaba/open-code-review/graphs/contributors); bots excluded from both rank and total. Reviews and issues are separate from this rank. [My pull requests](https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AQiyuanqiii)</sub>
 
 ## GitHub Activity
 
